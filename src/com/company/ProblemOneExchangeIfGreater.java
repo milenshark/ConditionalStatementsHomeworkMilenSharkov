@@ -12,14 +12,18 @@ public class ProblemOneExchangeIfGreater {
 
         Scanner scanner = new Scanner(System.in);
         System.out.print("Please enter a = ");
-        String variableA = scanner.next();
-        double a = Double.parseDouble(variableA);
+        String aString = scanner.nextLine();
+
         System.out.print("Please enter b = ");
-        String variableB = scanner.next();
-        double b = Double.parseDouble(variableB);
+        String bString = scanner.nextLine();
 
+        double a = Double.parseDouble(aString);
+        double b = Double.parseDouble(bString);
 
-        System.out.println(a + " " + b);
-
+        if (a > b) {
+            System.out.println(bString + " " + aString);
+        } else {
+            System.out.println(aString + " " + bString);
+        }
     }
 }
