@@ -3,6 +3,7 @@ package com.company;
 import java.util.Scanner;
 
 public class ProblemTwoBonusScore {
+
     public static void main(String[] args) {
 
 //        Problem 2. Bonus Score
