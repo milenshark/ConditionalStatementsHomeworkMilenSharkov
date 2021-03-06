@@ -14,17 +14,24 @@ public class ProblemThreeCheckForAPlayCard {
         System.out.println("Please enter a play card sign: ");
         String playCardSign = scanner.next();
 
-        if (playCardSign == "2" || playCardSign == "3" || playCardSign == "4" || playCardSign == "5"
-                || playCardSign == "6" || playCardSign == "7" || playCardSign == "8" || playCardSign == "9"
-                || playCardSign == "10" || playCardSign == "J" || playCardSign == "Q"
-                || playCardSign == "K" || playCardSign == "A")
-        {
-            System.out.println("yes");
-        }
-        else
-        {
-            System.out.println("no");
-        }
 
+        switch (playCardSign) {
+            case "2":
+            case "4":
+            case "5":
+            case "6":
+            case "7":
+            case "8":
+            case "9":
+            case "10":
+            case "J":
+            case "Q":
+            case "K":
+            case "A":
+                System.out.println("yes");
+                break;
+            default:
+                System.out.println("no");
+        }
     }
 }
